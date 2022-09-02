@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <title>Library Management</title>
+    <style>
+     
+        .navbar a {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid ">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                 aria-expanded="false" aria-label="Toggle navigation">
+                
+            </button>
+            <div  id="first" >
+                <ul >
+             <li><a id="lib">Library Management</a></li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="message"></div>
+
+    <div class="container my-3">
+        <h1 class="mainhead">Library Management System</h1>
+        <hr><br>
+
+       
+        <form id="libraryForm">
+            <div class="form-group row">
+                <label for="bookName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control w-50" id="bookName" placeholder="Book Name">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="Author" class="col-sm-2 col-form-label">Author</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control w-50" id="author" placeholder="Author Name">
+                </div>
+            </div>
+            <!-- <fieldset class="form-group"> -->
+                <br> 
+                <!-- <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Type</legend> -->
+                    <!-- <div class="col-sm-10">
+                        <div class="form-check"> -->
+                            <!-- <input class="form-check-input" type="radio" name="activity" id="programming" value="programming"
+                                checked>
+                            <label class="form-check-label" for="philippine">
+                                Computer Programming
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="Hacking"
+                                value="Hacking">
+                            <label class="form-check-label" for="Hacking">
+                                Ehthical Hacking
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="type" id="Fiction" value="Fiction">
+                            <label class="form-check-label" for="science">
+                                Fiction
+                            </label>-->
+                    <!-- </div> -->
+                     <!-- </div> -->
+                <!-- </div> -->
+            <!-- </fieldset> -->
+            <div class="form-group row">
+                <label for="Genre" class="col-sm-2 col-form-label">Genre</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control w-50" id="Genre" placeholder="Genre">
+                </div>
+            </div>
+            <br>
+            
+            
+                    <div class="formandnav">
+                    <button type="submit" class="btn btn-primary">Add Book</button>
+
+                     <a href="#tableBody" id="navigation" >Navigate to The Library</a>
+                     </div>
+            </div>
+        </form>
+ 
+    
+<br>
+        <div id="table">
+            <h1 id="mybooks">Your books <img id="boook" src="./istockphoto-157482029-612x612.jpg"  width=30rem"
+                height="30rem"  alt=""></h1>
+           <div class="filtercontainer">
+            <h4 id="filtering"> Filter Books </h4>
+            <h4>-></h4>
+   <input type="text" id="myInput" placeholder="Press key to filter.." onkeyup="filter()" ></input>
+</div>
+
+            <table class="table table-striped" id="thetable">
+                <thead>
+                    <tr>
+                        
+                        <th >Name</th>
+                        <th >Author</th>
+                        <th >Type</th>
+                        <th >Withdraw</th>
+                    </tr>
+                </thead>
+                <tbody id='tableBody'></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
