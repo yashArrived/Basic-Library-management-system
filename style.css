@@ -7,7 +7,7 @@ html {
     background: #81D8DB;
     height: 3.5rem;
     /* display: flex; */
-    position: sticky;
+/*     position: sticky; */
     z-index: 12;
     top: 0;
     /* left: 50%; */
