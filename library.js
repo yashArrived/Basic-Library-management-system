@@ -1,5 +1,3 @@
-selectdata();
-
 console.log("This is index.js");
 
 // constructor
@@ -13,9 +11,6 @@ function Book(name, author, type) {
 function Display() {
 
 }
-
-//for dropdownmenu :
-
 // add methods to display prototype
 Display.prototype.add = function (book) {
     console.log('adding to UI');
@@ -57,20 +52,7 @@ display.show( 'success' , 'Book removed successfully from the library.')
 Display.prototype.clear = function () {
     let libraryForm = document.getElementById('libraryForm');
     libraryForm.reset();
-    selectdata();
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 //function for edit button
@@ -81,27 +63,6 @@ Display.prototype.clear = function () {
 //     document.getElementById("author").value=selectedrow.cells[1].innerHTML;
 //     document.getElementById("selectbox").value=selectedrow.cells[2].innerHTML;
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -217,41 +178,3 @@ function filter(){
 
 }}
 
-
-
-
-
-
-
-
-
-
-     // Define selector for selecting
-        // anchor links with the hash
-        // let anchorSelector = 'a[href^="#"]';
-     
-        // $(anchorSelector).on('click', function (e) {
-         
-            // Prevent scrolling if the
-            // hash value is blank
-            // e.preventDefault();
-     
-            // Get the destination to scroll to
-            // using the hash property
-            // let destination = $(this.home);
-     
-            // Get the position of the destination
-            // using the coordinates returned by
-            // offset() method
-            // let scrollPosition
-                // = destination.offset().top;
-     
-            // Specify animation duration
-            // let animationduration = 500;
-     
-            // Animate the html/body with
-            // the scrollTop() method
-            // $('html, body').animate({
-            //     scrollTop: scrollPosition
-            // }, animationDuration);
-        // });
