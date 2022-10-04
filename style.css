@@ -14,8 +14,8 @@ html {
     z-index: 12;
     top: 0;
     /* left: 50%; */
-    padding-top: 0%;
     /* transform: translateX(-50%); */
+    padding-top: 0%;
     padding-bottom:  3rem;
     /* justify-content: space-around; */
     /* align-items: center; */
@@ -28,7 +28,7 @@ navbar{
     display: none;
 }
 #nav {
-    color: black;
+    color: #4D4D4D;
     padding-bottom: 1.2rem;
 
     padding-left: 1rem;
@@ -109,7 +109,6 @@ navbar{
 #author{
     /* width: 100%; */
     /* margin-top: 1%; */
-    margin-left: 0.33%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: 2px solid white;
     border-radius: 4px;
@@ -171,7 +170,6 @@ table thead tr{
     border-radius: 4px;
 }
 #libgo{
-    width: 100%;
     margin-top: 1rem;
     height: 3rem;
     background-color: white;
@@ -183,7 +181,6 @@ table thead tr{
 #addbook{
     height: 3rem;
     background-color: #81D8DB;
-    border: 2px solid #ffffff;
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
 }
@@ -211,13 +208,17 @@ height: inherit;
 }
 
 .selectbox{
-    width: 100%;
     /* margin-top: 1%; */
-    margin-left: 0.33%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 370px;
+    margin-top: 26px;
+    margin-left: 5%;
+    box-shadow: 0 3px 3px rgb(183, 182, 182);
     border: 2px solid white;
     border-radius: 4px;
     height: 2.3rem;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #727272;
 }
  td > a{
     text-decoration: none;
@@ -327,4 +328,35 @@ border-radius: 0.3rem;
     text-decoration: none;
     margin-left: 1.5rem;
 }
+
+.form-group{
+    margin: 20px 0 0 0;
+    text-align: right;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: #727272;
+    
+}
+
+.btn{
+    background-color: #fff;
+    width: 290px;
+    text-align: left;
+    color: #545454;
+    position: relative;
+    left:800px;
+    top: 8px;
+    
+
+}
+.btn:hover {
+    background-color: #fff !important;
+    text-decoration: none;
+    }
+
+.form-outline{
+        position: relative;
+        
+}
+
 
