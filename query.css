@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1024px){
+    #people{
+        display: none;
+   }
+
+.main__container{
+    background: url(/2.png) no-repeat ;
+    /* box-shadow: 2px 2px 2px 2px black; */
+    /* background-blend-mode: lighten; */
+}
+
+}
+
+@media only screen and (max-width: 720px){
+    #bookimg{
+
+     /* margin: 0%;/ */
+     /* height: min-content; */
+
+    }
+.navbar{
+   
+        display: none;
+        /* flex-direction: column; */
+    } 
+  
+    .navb{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: 0.5px solid white;
+        font-size: 2rem;
+        text-decoration: none;
+        background-color: #81D8DB;
+    }
+    .imggbook{
+        display: flex;
+        /* width: 4rem; */
+        justify-content: center;
+        background-color: #81D8DB;
+        /* border-radius: 1rem; */
+    }
+    
+    navbar{
+       display: flex;
+       flex-direction: column;
+    }
+    .imgbook{
+        /* display: flex; */
+        /* z-index: +44; */
+        /* justify-content: center; */
+        /* width: 6rem; */
+    }
+}
