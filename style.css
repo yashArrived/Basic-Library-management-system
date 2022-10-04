@@ -1,3 +1,5 @@
+/* @media only screen and (min-width: 1024px) */
+/* { */
 html {
     scroll-behavior: smooth;
     
@@ -6,8 +8,9 @@ html {
  .navbar{
     background: #81D8DB;
     height: 3.5rem;
-    /* display: flex; */
-/*     position: sticky; */
+    display: flex;
+    justify-content: space-between;
+    /* position: sticky; */
     z-index: 12;
     top: 0;
     /* left: 50%; */
@@ -21,10 +24,13 @@ html {
 
     transition: 0.6s;
 }
+navbar{
+    display: none;
+}
 #nav {
     color: black;
     padding-bottom: 1.2rem;
-    position: relative; 
+
     padding-left: 1rem;
     margin-bottom: 0%;
     /* background-image: url(./Group\ 26.png); */
@@ -32,7 +38,7 @@ html {
     /* left: 3rem; */
 }
 .sbar{
-    width: 30%;
+    /* width: 100%; */
     /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
     box-shadow: 0px 0px 0px white;
     
@@ -42,12 +48,6 @@ html {
 }
 .imgbook{
     margin-top: 0%;
-    /* width: 100%; */
-    /* padding-bottom: 1rem; */
-    /* padding-top: 0%; */
-    display: flex;
-    /* border-radius: 50px ; */
-    justify-content: center;
     border-radius:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #addbook:hover{
@@ -68,6 +68,10 @@ html {
     height: 5rem;
 
 }
+.col-sm-10{
+    /* width: auto; */
+    
+}
 .main__container{
     display: flex;
     width: 100%;
@@ -83,14 +87,7 @@ html {
     height: 30rem;
     /* margin-bottom: 5rem; */
 }
-/* #people{ */
-    
-    /* width: 100%; */
-    /* height: 100%; */
-    /* object-fit: cover;
-    z-index: -12; */
 
-/* } */ 
 #head{
    
     font-family: open Sans;
@@ -105,12 +102,12 @@ html {
 }  
 .authornameandinp{
     display: flex;
-    justify-content: center;
+
     width: 100%;
 } 
 
 #author{
-    width: 100%;
+    /* width: 100%; */
     /* margin-top: 1%; */
     margin-left: 0.33%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -325,30 +322,9 @@ border-radius: 0.3rem;
 .mmm{
     margin-top: 0.7rem;
 }
-/* #crossandedit{
-    display: flex;
-} */
+
 #edit{
     text-decoration: none;
     margin-left: 1.5rem;
 }
 
-  /* Media quries for mobile view */
-  @media only screen and (max-width: 770px){
-      .mobileviewform{
-     display: flex;
-     width: 100%;
-    justify-content: center;
- }
-.enterbook{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-/* #libraryForm{
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-
-} */
-  } 
