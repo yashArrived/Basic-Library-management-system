@@ -29,9 +29,9 @@ navbar{
 }
 #nav {
     color: black;
-    padding-bottom: 1.2rem;
+    padding-bottom: 2.7rem;
 
-    padding-left: 1rem;
+    padding-left: 1.7rem;
     margin-bottom: 0%;
     /* background-image: url(./Group\ 26.png); */
 
@@ -51,21 +51,30 @@ navbar{
     border-radius:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #addbook:hover{
-    background-color: #38afb3;
+    background-color: #5ee2e7;
+    border-color: #5ee2e7;
+
+}
+.twobuttons{
+
 }
 #libgo:hover{
-    background-color: rgb(255, 248, 248);
+    background-color: #81D8DB;
+    border-color: #81D8DB;
+    color: white;
+
 }
 .srch{
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
     padding-top: 0rem;
     padding-right: 1rem;
+    width: 25%;
 }
 #bookimg{
     border-radius:  0  0 10px 10px;
     /* width: 14rem; */
     /* justify-content: center; */
-    height: 5rem;
+    height: 6rem;
 
 }
 .col-sm-10{
@@ -82,9 +91,12 @@ navbar{
     width: 100%;
     /* flex: 0.5; */
 }
+.bi {
+    margin: 3% -12%;
+}
 #people{
-    margin-top: 0%;
-    height: 30rem;
+    margin-top: -2%;
+    height: 32rem;
     /* margin-bottom: 5rem; */
 }
 
@@ -98,6 +110,7 @@ navbar{
 #bookName{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: 2px solid white;
+    height: 2.7rem;
     
 }  
 .authornameandinp{
@@ -113,7 +126,7 @@ navbar{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: 2px solid white;
     border-radius: 4px;
-    height: 2.3rem;
+    height: 2.7rem;
 }
 #submit{
 /* position: absolute; */
@@ -159,33 +172,53 @@ table thead tr{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-/* margin-top: 0%; */
-/* margin-bottom: 0%; */
-/* margin: 1rem; */
+    /* width: 100%; */
+    /* margin-top: 0%; */
+    /* margin-bottom: 0%; */
+    /* margin: 1rem; */
+}
+h6{
+    font-size: 1.2rem;
+    margin: -.9rem 1rem;
+    position: absolute;
+    float: left;
+    left: 8rem;
 }
 #myInput{
     border: 1px solid #81D8DB;
     /* border: none; */
     color: #81D8DB;
     border-radius: 4px;
+    position: absolute;
+    float: left;
+    left: 17%;
+    margin: -1rem 0rem;
 }
 #libgo{
-    width: 100%;
+    margin-left: 8.2rem;
+    width: 58.5%;
     margin-top: 1rem;
     height: 3rem;
     background-color: white;
     color: #81D8DB;
     text-decoration: solid;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671); */
+    box-shadow:2px 3px 8px 3px rgb(0 0 0 / 35%);
     border: 2px solid #81D8DB;
+    border-radius: 3px;
 }
 #addbook{
+    box-shadow:2px 3px 8px 3px rgb(0 0 0 / 35%);
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    border-radius: 3px;
+    margin-left: 8.2rem;
     height: 3rem;
     background-color: #81D8DB;
     border: 2px solid #ffffff;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671); */
+    border: 2px solid #81D8DB;
 }
 /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671); */
 
@@ -210,14 +243,18 @@ height: inherit;
     /* border: 2px solid black; */
 }
 
+.weight{
+    font-weight: 600;
+}
 .selectbox{
+    height: 3rem;
     width: 100%;
     /* margin-top: 1%; */
     margin-left: 0.33%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: 2px solid white;
     border-radius: 4px;
-    height: 2.3rem;
+    
 }
  td > a{
     text-decoration: none;
@@ -252,6 +289,10 @@ height: inherit;
     width: 1rem;
     color: #81D8DB;
     height: 1rem;
+    position: relative;
+    float: right;
+    right: -36rem;
+    top: -1.2rem;
 }
 #homebutton{
 background-color: #81D8DB;
@@ -316,7 +357,6 @@ border-radius: 0.3rem;
   .secondpage{
     
   }
-
 
 
 .mmm{

@@ -26,7 +26,7 @@
 
 
 <body style="background-color: rgb(248, 245, 245);">
-    <nav class="navbar">
+    <nav class="navbar" id="home0">
 
         <!-- <div  class="container-fluid "> -->
             <a class="navbar-brand" href="#" id="nav">Library Management</a>
@@ -35,8 +35,11 @@
             
 
             <form class="d-flex sbar srch" role="search">
-                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" >
-                
+                    <input class="form-control me-2 " type="search.." placeholder="Search.." aria-label="Search" >
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
                   
                 </form>
             </div>
@@ -48,14 +51,14 @@
         
         <a class="navb" href="#" id="nav">Library Management</a>
 <!-- 
-            <form class="d-flex sbar srch" role="search">
+            <form class="d-flex sbar sroch" role="search">
                 <input class="form-control " type="search" placeholder="Search" aria-label="Search" > -->
             
               
             </form>
         </div>
     </navbar>
-   
+   <br><br>
 <div class="firstpage" id="home"></div>
     <div id="message"></div>
 
@@ -64,15 +67,15 @@
 <div class="formdiv">
         <div class="maincontainer">
             
-            <div class="enterbook"> <h3>Please Enter the Book details</h3></div>
+            <div class="enterbook"> <h3>Please Enter the Book details..</h3></div>
             <!-- <img src="2.png" alt="" id="img" srcset=""> -->
         </div>
-        <br>
+        <br><br>
         <div class="mobileviewform">
         <form id="libraryForm">
             <div class="authornameandinp">
-                <label for="bookName" class="col-sm-2  col-form-label">Book Name</label>
-                <div class="col-sm-10">
+                <label for="bookName" class="col-sm-2  col-form-label  weight ">Book Name:</label>
+                <div class="col-sm-7">
                     <input type="text" class="selectbox" id="bookName" placeholder="Book Name">
                     </div>
                 
@@ -82,17 +85,17 @@
             <br>
             <div class="row">
                 <div class="authornameandinp">
-                <label for="Author" class="col-sm-2 col-form-label">Author Name</label>
-                <div class="col-sm-10">
+                <label for="Author" class="col-sm-2 col-form-label  weight">Author Name:</label>
+                <div class="col-sm-7">
                     <input type="text" class="selectbox" id="author" placeholder="Author Name"></div>
                 </div>
                 <!-- <fieldset class="form-group"> -->
-                    <br><br>
+                    <br><br><br>
                     <div class="authornameandinp mmm">
-                        <label for="Genre" class="col-sm-2 col-form-label">Genre</label>
-                        <div class="col-sm-10">
+                        <label fr="Genre" class="col-sm-2 col-form-label  weight"  >Genre:</label>
+                        <div class="col-sm-7">
                             <!-- <div class="form-check"> -->
-                                <select name="" class="selectbox" id="selectbox">
+                                <select name="" class="selectbox" id="selectbox"   value="">
                                     <option value="Ethical Hacking">Ethical Hacking</option>
                                     <option value="Programming">Programming</option>
                                     <option value="Fiction">Fiction</option>
@@ -103,14 +106,15 @@
                 </div>
             
         
-             <br>
+             <br><br>
              <!-- <div class=" "> -->
-                <div class="twobuttons">
-                    <button type="submit" id="addbook"  >ADD BOOK</button>
+                <div class="twobuttons ,col-sm-7">
+                    <button type="submit" class="col-sm-7" id="addbook"  >ADD BOOK</button>
+                    
                 <!-- </div> -->
              <!-- <div class=" row py-3"> -->
                  <div class="gotolib">
-                  <a href="#thetable">  <button type="button"  id="libgo" class="" >GO TO LIBRARY</button></a>
+                  <a href="#thetable">  <button type="button" id="libgo"  >GO TO LIBRARY</button></a>
                 </div> 
                 </div>
             </div>
@@ -120,7 +124,7 @@
 
 
 
-
+<!-- 
 <section id="footer">
         <div class="roww">
             <div class="col-md-3 col-sm-3 padding-0">
@@ -138,9 +142,9 @@
         </div>
 
 
-    </section>
+    </section> -->
 
-<br><br>
+<br><br><br><br><br><br><br>
 <div class="secondpage">
          <div id="table">
             <div class="headinglibrary">
@@ -148,11 +152,11 @@
         </div>
             <a href=""></a>
             <div class="filtercontainer">
-                <h4 id="filtering filter" > Filter Books </h4>
+                <h6 id="filtering filter" > Filter Books: </h6>
                 <!-- <h4>-></h4> -->
        <input type="text" id="myInput" placeholder="Press any key to filter" onkeyup="filter()" ></input>
 
-       <a id="homeicon" href="#home">
+       <a id="homeicon" href="#home0">
            <i class="fa fa-home fa-2x" ></i></a>
         </div>
             <!-- <h4 id="filter">filter</h4>
