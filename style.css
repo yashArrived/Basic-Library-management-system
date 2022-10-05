@@ -24,6 +24,7 @@ html {
 
     transition: 0.6s;
 }
+
 navbar{
     display: none;
 }
@@ -55,6 +56,7 @@ navbar{
 }
 #libgo:hover{
     background-color: rgb(255, 248, 248);
+    border-color: #81D8DB;
 }
 .srch{
     padding-bottom: 1.5rem;
@@ -72,19 +74,28 @@ navbar{
     /* width: auto; */
     
 }
+.bi{
+    float: right;
+    margin: -1.8rem 1.5rem;
+}
+.me-2{
+
+    width: 22rem;
+}
 .main__container{
     display: flex;
     width: 100%;
     height: 30rem;
     justify-content: space-between;
+    margin: 0rem -7rem;
 }
 .formdiv{
     width: 100%;
     /* flex: 0.5; */
 }
 #people{
-    margin-top: 0%;
-    height: 30rem;
+    margin-top: 7%;
+    height: 100%;
     /* margin-bottom: 5rem; */
 }
 
@@ -112,7 +123,7 @@ navbar{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: 2px solid white;
     border-radius: 4px;
-    height: 2.3rem;
+    height: 2.7rem;
 }
 #submit{
 /* position: absolute; */
@@ -168,21 +179,24 @@ table thead tr{
     /* border: none; */
     color: #81D8DB;
     border-radius: 4px;
+    margin: 0rem 1rem;
 }
 #libgo{
+    width: 53.5%;
     margin-top: 1rem;
     height: 3rem;
     background-color: white;
     color: #81D8DB;
     text-decoration: solid;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+    box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.671);
     border: 2px solid #81D8DB;
 }
 #addbook{
+    width: 53.5%;
     height: 3rem;
-    background-color: #81D8DB;
+    background-color: #00f4fd;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+    box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.671);
 }
 /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671); */
 
@@ -209,17 +223,27 @@ height: inherit;
 
 .selectbox{
     /* margin-top: 1%; */
-    width: 370px;
+    width: 80%;
+    
     margin-top: 26px;
     margin-left: 5%;
     box-shadow: 0 3px 3px rgb(183, 182, 182);
     border: 2px solid white;
     border-radius: 4px;
-    height: 2.3rem;
+    height: 2.7rem;
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     color: #727272;
 }
+.fa{
+    position: absolute;
+    float: right;
+    right: 10%;
+    
+}
+
+
+
  td > a{
     text-decoration: none;
     width: 100%;
@@ -272,7 +296,7 @@ border-radius: 0.3rem;
 }
 .filtercontainer{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin: 0.7rem;
     }
 
@@ -294,7 +318,7 @@ border-radius: 0.3rem;
     display: flex;
     /* flex-direction: row-reverse; */
 }
-  
+ 
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
@@ -332,8 +356,8 @@ border-radius: 0.3rem;
 .form-group{
     margin: 20px 0 0 0;
     text-align: right;
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 17px;
     color: #727272;
     
 }
