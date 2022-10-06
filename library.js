@@ -26,7 +26,7 @@ Display.prototype.add = function (book) {
                     </td>
                     
                     </tr>`
-                    // <a href="#home" onclick="onedit(this)" id="edit" class="editing" > Edit </a> 
+
                         
 
     tableBody.innerHTML += uiString;
@@ -58,17 +58,7 @@ Display.prototype.clear = function () {
     libraryForm.reset();
 }
 
-
-//function for edit button
-
-// function onedit(td){
-//     let selectedrow=td.parentElement.parentElement.parentElement;
-//     document.getElementById("bookName").value=selectedrow.cells[0].innerHTML;
-//     document.getElementById("author").value=selectedrow.cells[1].innerHTML;
-//     document.getElementById("selectbox").value=selectedrow.cells[2].innerHTML;
-// }
-
-
+//for validating with length of book/author name
 
 Display.prototype.validate = function (book) {
     if (book.name.length < 2 || book.author.length < 2) {
@@ -93,6 +83,8 @@ Display.prototype.show = function (type, Smessage) {
 
     
 }
+//validation and error msg show ends here
+
 
 
 
@@ -101,6 +93,7 @@ let libraryForm = document.getElementById('libraryForm');
 
 libraryForm.addEventListener('submit', libraryFormsubmit);
 
+let display = new Display();
 function libraryFormsubmit(e) {
     console.log('You have submitted the form');
     
@@ -112,50 +105,79 @@ function libraryFormsubmit(e) {
     
     book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[];
     if(book_name!=null){
+        let book = new Book(name, author, type);
         if(book_name.some((v)=>{return v.name==name})){
             alert("Book already exists!");
-            display.clear();
-             display.show('danger', ' sorry you cannot add this book.')
+            // display.clear();
+            display.show('danger', ' sorry you cannot add this book.')
         }
         else{
-            
             book_name.push({
                 "name":name,
                 "author":author,
-        "type":type
-    })
+                "type":type
+            })
+            if (display.validate(book)) {
     
-    localStorage.setItem("booknames",JSON.stringify(book_name));
+   
+                display.clear();
+                display.show('success', ' your book has been successfully added');
+            }
+            else {
+                display.clear();
+                display.show('danger', ' sorry you cannot add this book.')
+            }
 
-    
-
-}}
+            display.add(book);
+            
+            
+            
+            
+        }}
+        localStorage.setItem("booknames",JSON.stringify(book_name));
 // let name_of_book = JSON.parse(localStorage.getItem("booknames"));
 
-// console.log("name",name_of_book);
 
 let book = new Book(name, author, type);
 
-// console.log(book);
+// let display = new Display();
 
-let display = new Display();
-if (display.validate(book)) {
-    
-    display.add(book);
-    display.clear();
-    display.show('success', ' your book has been successfully added');
-}
-else {
-    display.clear();
-    display.show('danger', ' sorry you cannot add this book.')
-}
-console.log(document.querySelector("#thetable > tbody > tr:nth-child(1) > td:nth-child(3)").innerHTML);
+// console.log(document.querySelector("#thetable > tbody > tr:nth-child(1) > td:nth-child(3)").innerHTML);
 
 
 
     e.preventDefault();
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Search book feature
 function filter(){
     
     let filterval = document.getElementById('myInput').value.toUpperCase();
