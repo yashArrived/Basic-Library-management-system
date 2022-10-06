@@ -328,3 +328,6 @@ border-radius: 0.3rem;
     margin-left: 1.5rem;
 }
 
+.table-filter {
+    border-radius: 5px;
+}

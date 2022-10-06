@@ -1,3 +1,5 @@
+
+
 console.log("This is index.js");
 
 // constructor
@@ -37,6 +39,7 @@ Display.prototype.clear = function () {
 }
 Display.prototype.deleteBook = function(target){
     if(target.className ==='delete'){
+        localStorage.clear();
         target.parentElement.parentElement.remove();
     }
 }
@@ -44,6 +47,7 @@ document.getElementById('tableBody').addEventListener('click',function(e){
     // instantiate UI
 const display = new Display();
  display.deleteBook(e.target);
+ 
 //show alert
 display.show( 'success' , 'Book removed successfully from the library.')
 
@@ -86,6 +90,8 @@ Display.prototype.show = function (type, Smessage) {
     setTimeout(() => {
         message.innerHTML = ''
     }, 5000);
+
+    
 }
 
 
@@ -97,49 +103,54 @@ libraryForm.addEventListener('submit', libraryFormsubmit);
 
 function libraryFormsubmit(e) {
     console.log('You have submitted the form');
+    
     let name = document.getElementById('bookName').value
     let author = document.getElementById('author').value
     let type = document.getElementById("selectbox").value
-
-let book_name = new Array();
-
-book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[];
-if(book_name!=null){
-if(book_name.some((v)=>{return v.name==name})){
-    alert("Book already exists!");
-}
-else{
-
-    book_name.push({
-        "name":name,
-        "author":author,
+    
+    let book_name = new Array();
+    
+    book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[];
+    if(book_name!=null){
+        if(book_name.some((v)=>{return v.name==name})){
+            alert("Book already exists!");
+            display.clear();
+             display.show('danger', ' sorry you cannot add this book.')
+        }
+        else{
+            
+            book_name.push({
+                "name":name,
+                "author":author,
         "type":type
     })
     
-        localStorage.setItem("booknames",JSON.stringify(book_name));
+    localStorage.setItem("booknames",JSON.stringify(book_name));
+
     
 
 }}
-    // let name_of_book = JSON.parse(localStorage.getItem("booknames"));
-    
-    // console.log("name",name_of_book);
-   
-    let book = new Book(name, author, type);
+// let name_of_book = JSON.parse(localStorage.getItem("booknames"));
 
-    // console.log(book);
-    
-    let display = new Display();
-    if (display.validate(book)) {
+// console.log("name",name_of_book);
 
-        display.add(book);
-        display.clear();
-        display.show('success', ' your book has been successfully added');
-    }
-    else {
-        display.show('danger', ' sorry you cannot add this book.')
-    }
+let book = new Book(name, author, type);
+
+// console.log(book);
+
+let display = new Display();
+if (display.validate(book)) {
     
-    
+    display.add(book);
+    display.clear();
+    display.show('success', ' your book has been successfully added');
+}
+else {
+    display.clear();
+    display.show('danger', ' sorry you cannot add this book.')
+}
+console.log(document.querySelector("#thetable > tbody > tr:nth-child(1) > td:nth-child(3)").innerHTML);
+
 
 
     e.preventDefault();
@@ -177,4 +188,6 @@ function filter(){
     // }
 
 }}
+
+
 

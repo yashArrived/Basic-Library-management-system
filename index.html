@@ -149,9 +149,9 @@
         </div>
             <a href=""></a>
             <div class="filtercontainer">
-                <h4 id="filtering filter" > Filter Books </h4>
+                <h4 id="filtering filter" > Search Books </h4>
                 <!-- <h4>-></h4> -->
-       <input type="text" id="myInput" placeholder="Press any key to filter" onkeyup="filter()" ></input>
+       <input type="text" id="myInput" placeholder="Search your book" onkeyup="filter()" ></input>
 
        <a id="homeicon" href="#home">
            <i class="fa fa-home fa-2x" ></i></a>
@@ -163,16 +163,18 @@
 
             <table class="table table-striped " id="thetable">
                 <thead class="table-info">
-                    <tr class="clr">
+                  
                         
                         <!-- <th scope="col">Sr. No.</th> -->
                         <th scope="col">Name</th>
                         <th scope="col">Author</th>
-                        <th scope="col">Type</th>
-                        
+                        <th col-index=3 scope="col">Type
+                            <select class="table-filter" onchange="filter_rows()">
+                                <option value="all"></option>
+                            </select>
+                        </th>
                         
                         <th scope="col">Withdraw</th>
-                    </tr>
                 </thead>
                 <tbody id='tableBody'></tbody>
             </table>
