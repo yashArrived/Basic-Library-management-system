@@ -331,3 +331,66 @@ border-radius: 0.3rem;
 .table-filter {
     border-radius: 5px;
 }
+
+
+
+/* //realfilter section */
+.dropdown {
+    float: right;
+    margin-right: 115px;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #38afb3;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropbtn:hover {
+    cursor: pointer;
+  }
+  
+  .dropdown:hover {
+    background-color: #81D8DB;
+    text-decoration: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #38afb3 !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    -webkit-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+    transition: opacity .3 ease-in;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ff7b7b;
+  }
+  #selectionbox{
+    width: 10%;
+    border: 2px solid white ;
+    background-color: #81D8DB;
+  }
+  #Filterremoving {
+    background-color: #81D8DB;
+    border: 1px solid #ffffff;
+  }
