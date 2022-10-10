@@ -25,7 +25,6 @@
     <!-- .. -->
 
 
-
 <body style="background-color: rgb(248, 245, 245);">
     <nav class="navbar">
 
@@ -36,8 +35,9 @@
             
 
             <form class="d-flex sbar srch" role="search">
-                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" >
-                
+                <div class="form-outline">
+                    <input class="form-control me-2 " type="search" placeholder="Search books,novels & more..." aria-label="Search" style="box-shadow: 0 3px 3px rgb(24, 131, 133); width: 270px;">
+                </div>
                   
                 </form>
             </div>
@@ -72,9 +72,9 @@
         <div class="mobileviewform">
         <form id="libraryForm">
             <div class="authornameandinp">
-                <label for="bookName" class="col-sm-2  col-form-label">Book Name</label>
-                <div class="col-sm-10">
-                    <input type="text" class="selectbox" id="bookName" placeholder="Book Name">
+                <label for="bookName" class="col-sm-2 col-md-4 col-form-label form-group">Book Name:</label>
+                <div class="col-sm-10 col-md-8">
+                    <input type="text" class="selectbox" id="bookName" placeholder="Enter here" style="padding-left :10px;">
                     </div>
                 
             </div>
@@ -83,17 +83,18 @@
             <br>
             <div class="row">
                 <div class="authornameandinp">
-                <label for="Author" class="col-sm-2 col-form-label">Author Name</label>
-                <div class="col-sm-10">
-                    <input type="text" class="selectbox" id="author" placeholder="Author Name"></div>
+                <label for="Author" class="col-sm-2 col-md-4 col-form-label form-group">Author Name:</label>
+                <div class="col-sm-10 col-md-8">
+                    <input type="text" class="selectbox" id="author" placeholder="Enter here" style="padding-left :10px;">
+                </div>
                 </div>
                 <!-- <fieldset class="form-group"> -->
                     <br><br>
                     <div class="authornameandinp mmm">
-                        <label for="Genre" class="col-sm-2 col-form-label">Genre</label>
-                        <div class="col-sm-10">
+                        <label for="Genre" class="col-sm-2 col-md-4 col-form-label form-group" style="padding-left :10px;">Genre:</label>
+                        <div class="col-sm-10 col-md-8">
                             <!-- <div class="form-check"> -->
-                                <select name="" class="selectbox" id="selectbox">
+                                <select name="" class="selectbox" id="selectbox" style="padding-left :10px;">
                                     <option value="Ethical Hacking">Ethical Hacking</option>
                                     <option value="Programming">Programming</option>
                                     <option value="Fiction">Fiction</option>
@@ -107,18 +108,19 @@
              <br>
              <!-- <div class=" "> -->
                 <div class="twobuttons">
-                    <button type="submit" id="addbook"  >ADD BOOK</button>
+                    <button type="submit" id="addbook" class="btn btn-color add-button"
+                    style="background-color: #81D8DB;">
+                    <i class="fa-solid fa-circle-plus"></i>ADD BOOK</button>
                 <!-- </div> -->
              <!-- <div class=" row py-3"> -->
                  <div class="gotolib">
-                  <a href="#thetable">  <button type="button"  id="libgo" class="" >GO TO LIBRARY</button></a>
+                  <a href="#thetable">  <button type="button"  id="libgo" class="btn btn-color lib-button btn-outline-light" style="background-color:white;">GO TO LIBRARY</button></a>
                 </div> 
                 </div>
             </div>
             <div class="peopleimage"><img id="people" src="./2.png" alt=""></div>
         </div>
             
-
 
 
 
@@ -138,7 +140,6 @@
             </div>
         </div>
 
-
     </section>
 
 <br><br>
@@ -152,6 +153,7 @@
                 <h4 id="filtering filter" > Search Books </h4>
                 <!-- <h4>-></h4> -->
        <input type="text" id="myInput" placeholder="Search your book" onkeyup="filter()" ></input>
+
 
 
        <select class="table-filter dropdown" id="selectionbox" onchange="realfilter()">
