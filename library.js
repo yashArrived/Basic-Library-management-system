@@ -1,6 +1,6 @@
+console.log("Yash tiwari");
+
 window.onload =  onwindowload();
-// showdata();
-console.log("This is index.js");
 
 // constructor
 function Book(name, author, type) {
@@ -11,29 +11,18 @@ function Book(name, author, type) {
 
 // display constructor
 function Display() {
-
 }
 
 let book_name=new Array();
-book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[]
-
-
-    // let book_name=new Array();
-    // book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[]
-
-
-
-
-
+book_name=JSON.parse(localStorage.getItem("book_name"))?JSON.parse(localStorage.getItem("book_name")):[]
 
 
         // add methods to display prototype
 Display.prototype.add = function (book) {
-    // let book = new Book(name , author , type);
-    console.log('adding to UI');
+
     let tableBody = document.getElementById('tableBody')
     let book_name=new Array();
-    book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[]
+    book_name=JSON.parse(localStorage.getItem("book_name"))?JSON.parse(localStorage.getItem("book_name")):[]
 
    
     if(book_name)
@@ -42,7 +31,8 @@ Display.prototype.add = function (book) {
     let i = book_name.length-1
     
     {
-    let uiString = `    <tr>
+    let uiString = ` 
+                         <tr>
                      <td>${book_name[i].name}</td>
                      <td>${book_name[i].author}</td>
                      <td>${book_name[i].type}</td>
@@ -68,18 +58,18 @@ Display.prototype.clear = function () {
 Display.prototype.deleteBook = function(target){
     if(target.className ==='delete'){
         // localStorage.clear();
-        let deleteddetails = target.parentElement.parentElement ;
-    
-        console.log(deleteddetails);
-        // console.log(book_name);
+        var deleteddetails = target.parentElement.parentElement ;
+     var deletedname = deleteddetails.firstChild.nextElementSibling.textContent;
+        for (let i = 0; i < book_name.length-1; i++) {
+            if(book_name[i].name===deletedname){
+                
+                // console.log(i);
+                book_name.splice(i , 1);
 
-        // if(deleteddetails===book_name){
-            // let index = indexOf(book_name);
-        //     name.splice(index,1);
-        //     console.log(book_name);
-        // }
-        // else console.log("no");
-        
+             localStorage.setItem('book_name' , JSON.stringify(book_name))
+
+            }        
+        }
         target.parentElement.parentElement.remove();
     }
 }
@@ -142,7 +132,7 @@ let display = new Display();
 
 
 function libraryFormsubmit(e) {
-    console.log('You have submitted the form');
+    
     
     let name = document.getElementById('bookName').value
     let author = document.getElementById('author').value
@@ -150,7 +140,7 @@ function libraryFormsubmit(e) {
     
     let book_name = new Array();
     
-    book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[];
+    book_name=JSON.parse(localStorage.getItem("book_name"))?JSON.parse(localStorage.getItem("book_name")):[];
     if(book_name!=null){
         let book = new Book(name, author, type);
         if(book_name.some((v)=>{return v.name==name})){
@@ -166,7 +156,7 @@ function libraryFormsubmit(e) {
             })
             if (display.validate(book)) {
                 
-                localStorage.setItem("booknames",JSON.stringify(book_name));
+                localStorage.setItem("book_name",JSON.stringify(book_name));
                 
                 display.add(book);
                 display.clear();
@@ -179,20 +169,7 @@ function libraryFormsubmit(e) {
             
             
         }} 
-       
-
-        
-// let nyame_of_book = JSON.parse(localStorage.getItem("booknames"));
-
-
-// let book = new Book(name, author, type);
-
-// let display = new Display();
-
-// console.log(document.querySelector("#thetable > tbody > tr:nth-child(1) > td:nth-child(3)").innerHTML);
-
-
-
+    
     e.preventDefault();
 }
 
@@ -200,7 +177,7 @@ function libraryFormsubmit(e) {
 function onwindowload(){
 let tableBody = document.getElementById('tableBody')
 let book_name=new Array();
-book_name=JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[]
+book_name=JSON.parse(localStorage.getItem("book_name"))?JSON.parse(localStorage.getItem("book_name")):[]
 
 
 if(book_name)
@@ -225,15 +202,6 @@ tableBody.innerHTML += uiString;}
 }
 }
 
-
-function deletefromlocal(){
-    let deleteddetails = target.parentElement.parentElement;
-    
-        
-    let name =JSON.parse(localStorage.getItem("booknames"))?JSON.parse(localStorage.getItem("booknames")):[]
-}
-
-
 function realfilter(){
     let valfilter=document.getElementById('selectionbox').value.toUpperCase();
 
@@ -241,7 +209,7 @@ function realfilter(){
     let tr = myTable.getElementsByTagName('tr');
     for(var i = 0 ; i<tr.length;i++){
         let td = tr[i].getElementsByTagName('td')[2];
-        console.log(td);
+    
         if(td){
             let textvalue=td.textContent || td.innerHTML;
             if(textvalue.toUpperCase().indexOf(valfilter)>-1){
