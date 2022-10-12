@@ -68,7 +68,9 @@
         height: 5rem;
     
     }
-    
+    .me-2{
+
+    }
     .main__container{
         display: flex;
         width: 100%;
@@ -80,7 +82,7 @@
         /* flex: 0.5; */
     }
     #people{
-        margin-top: 0%;
+        margin-top: 8%;
         height: 30rem;
         /* margin-bottom: 5rem; */
     }
@@ -91,9 +93,22 @@
         font-weight: bolder;
         /* margin: 0rem 13rem; */
     }
+    .selectbox{
+            width: 365px;
+            margin-top: 26px;
+            margin-left: 5%;
+            box-shadow: 0 3px 3px rgb(183, 182, 182);
+            border: 2px solid white;
+            border-radius: 4px;
+            height: 2.3rem;
+            font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+    
+    }
     
     #bookName{
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        /* box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.671); */
         border: 2px solid white;
         
     }  
@@ -155,16 +170,29 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        /* width: 100%; */
     /* margin-top: 0%; */
     /* margin-bottom: 0%; */
     /* margin: 1rem; */
+    }
+    .enterbook{
+        margin: 0% 19%;
+    }
+    .bi{
+        position: absolute;
+        
+        right: 6%;
+        top: 25%;
     }
     #myInput{
         border: 1px solid #81D8DB;
         /* border: none; */
         color: #81D8DB;
         border-radius: 4px;
+        box-shadow: 2px 2px 8px -4px rgba(0, 0, 0, 0.671);
+        position: relative;
+        left: 1%;
+        width: 17%;
     }
     #libgo{
         margin-top: 1rem;
@@ -172,14 +200,15 @@
         background-color: white;
         color: #81D8DB;
         text-decoration: solid;
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+        box-shadow: 2px 2px 12px -2px rgba(0, 0, 0, 0.671);
         border: 2px solid #81D8DB;
     }
     #addbook{
         height: 3rem;
         background-color: #81D8DB;
         color: white;
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+        box-shadow: 2px 2px 12px -2px rgba(0, 0, 0, 0.671);
+        
     }
     /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671); */
     
@@ -200,18 +229,6 @@
         /* border: 2px solid black; */
     }
     
-    .selectbox{
-            width: 370px;
-            margin-top: 26px;
-            margin-left: 5%;
-            box-shadow: 0 3px 3px rgb(183, 182, 182);
-            border: 2px solid white;
-            border-radius: 4px;
-            height: 2.3rem;
-            font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 16px;
-    
-    }
      td > a{
         text-decoration: none;
         width: 100%;
@@ -264,7 +281,7 @@
     }
     .filtercontainer{
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         margin: 0.7rem;
         }
     
@@ -325,9 +342,10 @@
     .form-group{
         margin: 20px 0 0 0;
         text-align: right;
-        font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 25px;
-        color: #727272;
+        /* font-family:'Open Sans', 'Helvetica Neue', sans-serif; */
+        font-size: 18px;
+        font-weight: 600;
+        color: #3b3b3b;
         
     }
     
@@ -441,11 +459,20 @@
     background-color: #ff7b7b;
   }
   #selectionbox{
-    width: 10%;
-    border: 2px solid white ;
+    position: absolute;
+    right: 19%;
+    width: 8%;
+    border-radius: 5px;
+    border: 2px solid #81D8DB ;
     background-color: #81D8DB;
+    box-shadow: 2px 2px 8px -4px rgba(0, 0, 0, 0.671);
   }
   #Filterremoving {
+    position: absolute;
+    right: 14%;
     background-color: #81D8DB;
-    border: 1px solid #ffffff;
+    border: 1px solid #81D8DB;
+    width: 12%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px -4px rgba(0, 0, 0, 0.671);
   }
