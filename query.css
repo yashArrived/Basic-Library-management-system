@@ -223,7 +223,7 @@ element.style {
         #selectionbox {
             position: absolute;
             right: 3%;
-            top: 265%;
+            top: 264%;
             width: 11%;
            
         
@@ -366,8 +366,8 @@ element.style {
     }
     .add-button {
         text-align: center;
-        width: 175px;
-        margin: 0px -190px;
+        width: 249px;
+        margin: 0px -227px;
 
         /* left: 325px; */
     
@@ -375,8 +375,8 @@ element.style {
     
     .lib-button{
         text-align: center;
-        width: 175px;
-        margin: 0px -190px;
+        width: 249px;
+        margin: 0px -227px;
 
         /* left: 325px; */
     }
@@ -391,7 +391,7 @@ element.style {
         #selectionbox {
             position: absolute;
             right: -17%;
-            top: 268%;
+            top: 269%;
             width: 13%;
             height: 19px;
             font-size: 52%;
