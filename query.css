@@ -1,10 +1,10 @@
 @media only screen and (max-width: 1024px){
     #people{
-        display: none;
+        /* display: none; */
    }
 
 .main__container{
-    background: url(/2.png) no-repeat ;
+    /* background: url(/2.png) no-repeat ; */
     /* box-shadow: 2px 2px 2px 2px black; */
     /* background-blend-mode: lighten; */
 }
@@ -110,7 +110,307 @@ width: 20%;
 
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 1024px){
+@media only screen and (min-device-width: 992px) and (max-device-width: 1024px){
+.peopleimage{
+}
+#people{
 
+}
+}
+@media only screen and (min-device-width: 770px) and (max-device-width: 992px){
 
+    .formdiv{
+        /* position: relative; */
+    /* left: -18%; */
+
+    }
+    .main__container{
+       
+}
+#people{
+    height: 77%;
+    margin: 25% -5%;
+    position: relative;
+    left: 13%;
+}
+.enterbook {
+    margin: 0% -8%;
+}
+.form-group {
+    position: relative;
+    left: -17%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3b3b3b;
+}
+
+element.style {
+    padding-left: 10px;
+}
+#bookName {
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    /* box-shadow: 2px 2px 10px -2px rgb(0 0 0 / 67%); */
+    border: 2px solid white;
+}
+.selectbox {
+    width: 280px;
+    margin-top: 21px;
+    margin-left: -22%;
+    box-shadow: 0 3px 3px rgb(183 182 182);
+    border: 2px solid white;
+    border-radius: 4px;
+    height: 2.3rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.twobuttons{
+    position: relative;
+    left: -72%;
+}
+.add-button {
+    
+    width: 280px;
+
+}
+.lib-button{
+    width: 280px;
+}
+#Filterremoving {
+    position: absolute;
+    right: 15%;
+    width: 15%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px -4px rgb(0 0 0 / 67%);
+}
+
+    #selectionbox{
+        right: 20%;
+    }
+    .h4{
+        font-size: 14px;
+        margin: 4px 0px;
+    }
+    .secondpage{
+        margin: -9% 0%;
+    }
+}
+@media only screen and (min-device-width: 721px) and (max-device-width: 779px){
+.me-2{
+    
+}
+
+}
+@media only screen and (min-device-width: 556px) and (max-device-width: 720px){
+    #people{
+        display: none;
+        /* z-index: -1; */
+        opacity: .5%;
+    }
+    .twobuttons{
+        position: relative;
+    left: -38%;
+    }
+    .enterbook {
+        margin: 0% 10%;
+    }
+    #Filterremoving {
+        position: absolute;
+        right: 15%;
+        width: 20%;
+        
+    }
+        #selectionbox {
+            position: absolute;
+            right: 3%;
+            top: 265%;
+            width: 11%;
+           
+        
+    }
+    .form-group {
+       margin: 5% 0%;
+        font-size: 13px;
+        font-weight: 600;
+        
+    }
+    .h4{
+        font-size: 13px;
+        margin: 4px 0px;
+    }
+    /* .main__container{
+        background: url(/2.png) no-repeat ; 
+        
+    } */
+    .secondpage{
+        margin: -9% 0%;
+    }
+}
+@media only screen and (min-device-width: 494px) and (max-device-width:575px){
+#people{
+    display: none;
+}
+#bookName{
+
+}
+#author{
+    margin: 11% 14%;
+}
+#selectbox{
+    margin: 16% 50%;
+    width: 192%;
+}
+
+.twobuttons{
+    position: relative;
+    left: -27%;
+    width: 82%;
+    /* display: none; */
+}
+.form-group {
+    margin: 27px 0px 0px 78px;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3b3b3b;
+}
+.enterbook {
+    margin: 0% 15%;
+}
+.selectbox {
+    width: 140%;
+    margin-top: 26px;
+    margin-left: 20%;
+   
+    font-size: 13px;
+}
+.add-button {
+    text-align: center;
+    width: 59%;
+    left: 325px;
+
+}
+
+.lib-button{
+    text-align: center;
+    width: 59%;
+    left: 325px;
+}
+.secondpage{
+    margin: -9% 0%;
+}
+.h4{
+    font-size: 13px;
+    margin: 4px 0px;
+}
+#Filterremoving {
+    position: absolute;
+    right: 10%;
+    width: 25%;
+    
+}
+    #selectionbox {
+        position: absolute;
+        right: -3%;
+        top: 265%;
+        width: 15%;
+       
+    
+}
+.i0{
+    display: none;
+}
+}
+@media only screen and (min-device-width: 330px) and (max-device-width:493px){
+    #people{
+        display: none;
+    }
+    .enterbook{
+        margin: 0% -1%;
+    }
+    
+    
+    .form-group {
+        margin: 27px 0px 0px 0px;
+        text-align: right;
+        font-size: 13px;
+        font-weight: 700;
+        color: #3b3b3b;
+    }
+   
+    .selectbox {
+        width: 100%;
+        margin-top: 26px;
+        margin-left: 20%;
+       
+        font-size: 13px;
+    }
+    #bookName{
+
+    }
+    #author{
+        margin: 11% 14%;
+    }
+    #selectbox{
+        margin: 16% 48%;
+        width: 138%;
+    }
+    .i0{
+        display: none;
+    }
+    .twobuttons{
+        position: relative;
+        /* left: -55%; */
+        
+        /* display: none; */
+    }
+    .add-button {
+        text-align: center;
+        width: 175px;
+        margin: 0px -190px;
+
+        /* left: 325px; */
+    
+    }
+    
+    .lib-button{
+        text-align: center;
+        width: 175px;
+        margin: 0px -190px;
+
+        /* left: 325px; */
+    }
+    #Filterremoving {
+        position: absolute;
+        right: 6%;
+        width: 23%;
+        height: 8%;
+        font-size: 65%;
+        
+    }
+        #selectionbox {
+            position: absolute;
+            right: -17%;
+            top: 268%;
+            width: 13%;
+            height: 19px;
+            font-size: 52%;
+           
+        
+    }
+    .h4{
+        font-size: 65%;
+    margin: 2% 0%;
+    }
+    #myInput{
+        width: 25%;
+    }
+    .secondpage{
+        margin: -9% 0%;
+    }
+
+    .i00{
+        display: none;
+    }
+    
 }
