@@ -352,7 +352,7 @@ element.style {
         margin: 11% 14%;
     }
     #selectbox{
-        margin: 16% 48%;
+        margin: 16% 45%;
         width: 138%;
     }
     .i0{
@@ -382,7 +382,7 @@ element.style {
     }
     #Filterremoving {
         position: absolute;
-        right: 6%;
+        right: 20px;
         width: 23%;
         height: 8%;
         font-size: 65%;
@@ -390,9 +390,9 @@ element.style {
     }
         #selectionbox {
             position: absolute;
-            right: -17%;
-            top: 269%;
-            width: 13%;
+            right: -76px;
+            top: 57.8rem;
+            width: 55px;
             height: 19px;
             font-size: 52%;
            
