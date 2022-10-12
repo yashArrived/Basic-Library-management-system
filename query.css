@@ -52,3 +52,65 @@
         /* width: 6rem; */
     }
 }
+
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1400px){
+    .twobuttons{
+        
+    position: relative;
+    left: -11%;
+
+    }
+
+
+}
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1199px){
+    .twobuttons{
+        
+    position: relative;
+    left: -2%;
+
+    }
+    #people{
+        margin: 5rem -4rem;
+        height: 30rem;
+        
+    }
+    .enterbook{
+        margin: 0% 22%;
+    }
+    .selectbox{
+        width: 290px;
+        margin-top: 26px;
+        margin-left: 5%;
+        box-shadow: 0 3px 3px rgb(183, 182, 182);
+        border: 2px solid white;
+        border-radius: 4px;
+        height: 2.3rem;
+        font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+
+}
+.formdiv{
+    margin: 4rem -13rem;
+}
+.add-button {  
+    width: 31.5%;
+    left: 38.5%;
+
+}
+.lib-button{
+    width: 31.5%;
+    left: 38.5%;
+}
+#myInput{
+width: 20%;
+}
+
+
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px){
+
+
+}
