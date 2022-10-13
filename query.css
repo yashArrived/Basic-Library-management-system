@@ -321,7 +321,7 @@ element.style {
     display: none;
 }
 }
-@media only screen and (min-device-width: 330px) and (max-device-width:493px){
+@media only screen and (min-device-width: 333px) and (max-device-width:493px){
     #people{
         display: none;
     }
@@ -349,11 +349,15 @@ element.style {
 
     }
     #author{
-        margin: 11% 13%;
+       
+      margin: 26px 22px;
+        width: 177px;
     }
     #selectbox{
-        margin: 16% 46%;
-        width: 138%;
+          
+      margin: 26px 57px;
+      width: 180px;
+    
     }
     .i0{
         display: none;
@@ -366,8 +370,8 @@ element.style {
     }
     .add-button {
         text-align: center;
-        width: 249px;
-        margin: 0px -227px;
+        width: 240px;
+    margin: 0px -222px;
 
         /* left: 325px; */
     
@@ -375,17 +379,17 @@ element.style {
     
     .lib-button{
         text-align: center;
-        width: 249px;
-        margin: 0px -227px;
+        width: 240px;
+        margin: 0px -222px;
 
         /* left: 325px; */
     }
     #Filterremoving {
         position: absolute;
         right: 24px;
-        width: 27%;
-        height: 15%;
-        font-size: 65%;
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
         
     }
         #selectionbox {
@@ -393,8 +397,8 @@ element.style {
             right: -69px;
             top: 57.8rem;
             width: 55px;
-            height: 19px;
-            font-size: 52%;
+            height: 20px;
+            font-size: 10px
            
         
     }
@@ -403,7 +407,7 @@ element.style {
     margin: 2% 0%;
     }
     #myInput{
-        width: 25%;
+        width: 70px;
     }
     .secondpage{
         margin: -9% 0%;
@@ -412,5 +416,10 @@ element.style {
     .i00{
         display: none;
     }
-    
+        #homeicon {
+            margin: -1% 2%;
+        }
+        navbar{
+            width: 107%;
+        }
 }
