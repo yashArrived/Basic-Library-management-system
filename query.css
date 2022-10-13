@@ -72,7 +72,7 @@
 
     }
     #people{
-        margin: 5rem -4rem;
+        margin: 5rem -2rem;
         height: 30rem;
         
     }
@@ -195,12 +195,68 @@ element.style {
         margin: -9% 0%;
     }
 }
-@media only screen and (min-device-width: 721px) and (max-device-width: 779px){
+@media only screen and (min-device-width: 721px) and (max-device-width: 769px){
 .me-2{
     
 }
+#people{
+    /* display: none; */
+    margin: 2rem 0rem;
+    position: relative;
+    width: 23rem;
+    left: 2rem;
+   
+}
+#bookimg{
+margin: 0rem -1rem;
+width: 13rem;
+}
+.formdiv{
 
 }
+.form-group {
+    margin: 21px 0 0 -71px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.selectbox {
+    width: 260px;
+    margin-top: 26px;
+    margin-left: 14%;
+    border-radius: 4px;
+    height: 2.3rem;
+
+    font-size: 16px;
+}   
+.enterbook {
+    margin: 0% -30%;
+
+}
+#addbook {
+margin: 0rem -19.1rem;
+width: 16.5rem;
+}
+#libgo{
+    margin: 1rem -19.1rem;
+width: 16.5rem;
+}
+
+
+#Filterremoving {
+    position: absolute;
+    right: 132px;
+  
+    width: 120px;
+   
+}
+#selectionbox {
+    position: absolute;
+    right: 20%;
+    width: 8%;
+   
+}
+}
+
 @media only screen and (min-device-width: 556px) and (max-device-width: 720px){
     #people{
         display: none;
@@ -277,6 +333,12 @@ element.style {
 .enterbook {
     margin: 0% 15%;
 }
+#myInput{
+    width: 90px;
+}
+#homeicon {
+    margin: -0.8% 2%;
+}
 .selectbox {
     width: 140%;
     margin-top: 26px;
@@ -305,14 +367,14 @@ element.style {
 }
 #Filterremoving {
     position: absolute;
-    right: 10%;
-    width: 25%;
+    right: 50px;
+    width: 127px;
     
 }
     #selectionbox {
         position: absolute;
-        right: -3%;
-        top: 265%;
+        right: -25px;
+        top: 56.7rem;
         width: 15%;
        
     
@@ -346,7 +408,8 @@ element.style {
         font-size: 13px;
     }
     #bookName{
-
+        margin: 26px 31px;
+        width: 177px
     }
     #author{
        
@@ -356,7 +419,7 @@ element.style {
     #selectbox{
           
       margin: 26px 57px;
-      width: 180px;
+      width: 177px;
     
     }
     .i0{
@@ -371,7 +434,7 @@ element.style {
     .add-button {
         text-align: center;
         width: 240px;
-    margin: 0px -222px;
+    margin: 0px -225px;
 
         /* left: 325px; */
     
@@ -380,7 +443,7 @@ element.style {
     .lib-button{
         text-align: center;
         width: 240px;
-        margin: 0px -222px;
+        margin: 0px -225px;
 
         /* left: 325px; */
     }
@@ -395,7 +458,7 @@ element.style {
         #selectionbox {
             position: absolute;
             right: -69px;
-            top: 57.8rem;
+            top: 57.6rem;
             width: 55px;
             height: 20px;
             font-size: 10px
@@ -420,6 +483,6 @@ element.style {
             margin: -1% 2%;
         }
         navbar{
-            width: 107%;
+            width: 103%;
         }
 }
