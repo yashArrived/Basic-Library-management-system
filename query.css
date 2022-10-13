@@ -349,10 +349,10 @@ element.style {
 
     }
     #author{
-        margin: 11% 14%;
+        margin: 11% 13%;
     }
     #selectbox{
-        margin: 16% 45%;
+        margin: 16% 46%;
         width: 138%;
     }
     .i0{
@@ -382,15 +382,15 @@ element.style {
     }
     #Filterremoving {
         position: absolute;
-        right: 20px;
-        width: 23%;
-        height: 8%;
+        right: 24px;
+        width: 27%;
+        height: 15%;
         font-size: 65%;
         
     }
         #selectionbox {
             position: absolute;
-            right: -76px;
+            right: -69px;
             top: 57.8rem;
             width: 55px;
             height: 19px;
