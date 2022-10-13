@@ -201,7 +201,7 @@ element.style {
 }
 #people{
     /* display: none; */
-    margin: 2rem 0rem;
+    margin: 2rem -1rem;
     position: relative;
     width: 23rem;
     left: 2rem;
