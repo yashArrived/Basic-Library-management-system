@@ -492,6 +492,12 @@
 body.dark-mode .form-group{
     color: #fff;
 }
+body.dark-mode .table{
+    color: #fff;
+}
+body.dark-mode .table-striped>tbody>tr:nth-of-type(odd)>*{
+    color: #fff;
+}
 
 .dark-mode-toggle {
     z-index: 1000 !important;
