@@ -67,7 +67,7 @@ Display.prototype.deleteBook = function(target){
                 book_name.splice(i , 1);
 
              localStorage.setItem('book_name' , JSON.stringify(book_name))
-
+               window.location.reload();
             }        
         }
         target.parentElement.parentElement.remove();
