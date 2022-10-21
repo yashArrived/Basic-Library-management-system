@@ -479,3 +479,29 @@
   #homeicon{
     margin: 0.2% 2%;
   }
+  .dark-mode {
+    background: linear-gradient(180deg,#040404 0.01%,#424242 100%);
+    color: white;
+  }
+
+.body{
+    background-color:#fff;
+}
+
+body.dark-mode .form-group{
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    z-index: 1000 !important;
+    height: 50px;
+    width: 55px;
+    position: fixed;
+    left: 0;
+    bottom: 45%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: var(--gfg-selected-color);
+    box-shadow: 0px 0px 4px rgb(82 76 76 / 50%);
+    transition: all 200ms ease-in;
+}
