@@ -479,6 +479,7 @@
   #homeicon{
     margin: 0.2% 2%;
   }
+
   .dark-mode {
     background: linear-gradient(180deg,#040404 0.01%,#424242 100%);
     color: white;
