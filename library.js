@@ -67,16 +67,19 @@ Display.prototype.deleteBook = function(target){
                 book_name.splice(i , 1);
 
              localStorage.setItem('book_name' , JSON.stringify(book_name))
-               window.location.reload();
+            //    window.location.reload();
             }        
         }
         target.parentElement.parentElement.remove();
     }
 }
+
+
 document.getElementById('tableBody').addEventListener('click',function(e){
     // instantiate UI
 const display = new Display();
  display.deleteBook(e.target);
+ 
  
 //show alert
 display.show( 'success' , 'Book removed successfully from the library.')
