@@ -46,6 +46,7 @@ Display.prototype.add = function (book) {
 
     tableBody.innerHTML += uiString;}
 }
+    location.reload();
 }
 
 
@@ -55,24 +56,30 @@ Display.prototype.clear = function () {
 
 }
 
-Display.prototype.deleteBook = function(target){
-    if(target.className ==='delete'){
-        // localStorage.clear();
-        var deleteddetails = target.parentElement.parentElement ;
-     var deletedname = deleteddetails.firstChild.nextElementSibling.textContent;
-        for (let i = 0; i < book_name.length-1; i++) {
-            if(book_name[i].name===deletedname){
-                
-                // console.log(i);
-                book_name.splice(i , 1);
 
-             localStorage.setItem('book_name' , JSON.stringify(book_name))
-            //    window.location.reload();
-            }        
-        }
+
+Display.prototype.deleteBook = function (target) {
+    console.log(target);
+    console.log(book_name);
+    if (target.className === 'delete') {
+
+
+        console.log(book_name);
+
+        var deleteddetails = target.parentElement.parentElement;
+        var deletedname = deleteddetails.firstChild.nextElementSibling.textContent;
+        console.log(deletedname)
+       
+        book_name.splice(book_name.findIndex(book => book.name === deletedname), 1);
+        console.log(book_name);
+
         target.parentElement.parentElement.remove();
+        localStorage.setItem('book_name', JSON.stringify(book_name))
     }
+ 
+
 }
+
 
 
 document.getElementById('tableBody').addEventListener('click',function(e){
