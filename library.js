@@ -46,7 +46,7 @@ Display.prototype.add = function (book) {
 
     tableBody.innerHTML += uiString;}
 }
-    location.reload();
+//     location.reload();
 }
 
 
